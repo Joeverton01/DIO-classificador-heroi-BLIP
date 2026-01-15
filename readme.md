@@ -22,6 +22,12 @@ O foco principal do projeto é o **raciocínio lógico aplicado**, aliado aos pr
 
 ---
 
+## 📌 O projeto está disponível online:
+
+Projeto: [Abrir projeto](https://joeverton01.github.io/DIO-classificador-heroi-BLIP/)
+
+---
+
 ## 🧠 Regras de Classificação
 
 | Rank        | XP Necessário       |
