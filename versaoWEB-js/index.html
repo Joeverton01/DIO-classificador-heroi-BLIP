@@ -1,11 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+
+    <title>Rank-Herói</title>
 </head>
+
 <body>
-    
+    <main>
+
+        <section id="container-titulo">
+            <h1>QUAL O RANK DO TEU HERÓI?</h1>
+            <p>Descubra agora qual nível o seu guerreiro pertence e veja se tua classificação está conforme o padrão de
+                teu herói</p>
+        </section>
+
+        <h2>Classificação dos ranks</h2>
+        <section id="informacoes-rank">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>XP Necessário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ferro</td>
+                        <td>0 - 1000 XP</td>
+                    </tr>
+                    <tr>
+                        <td>Bronze</td>
+                        <td>1001 - 2000 XP</td>
+                    </tr>
+                    <tr>
+                        <td>Prata</td>
+                        <td>2001 - 5000 XP</td>
+                    </tr>
+                    <tr>
+                        <td>Ouro</td>
+                        <td>5001 - 7000 XP</td>
+                    </tr>
+                    <tr>
+                        <td>Platina</td>
+                        <td>7001 - 8000 XP</td>
+                    </tr>
+                    <tr>
+                        <td>Ascendente</td>
+                        <td>8001 - 9000 XP</td>
+                    </tr>
+                    <tr>
+                        <td>Imortal</td>
+                        <td>9001 - 10000 XP</td>
+                    </tr>
+                    <tr>
+                        <td>Radiante</td>
+                        <td>≥ 10001 XP</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <h2>Descubra o rank do teu herói</h2>
+        <section id="formulario">
+            <form autocomplete="off"> <!-- formulário de entrada de dados SEM O ACTION por enqt(javascript)-->
+                <label for="nome-heroi">Nome do Herói:</label>
+                <input id="nome-heroi" type="text" placeholder="joaozinho">
+                <br>
+                <label for="quantidade-xp-heroi">Quantidade de XP do Herói:</label>
+                <input id="quantidade-xp-heroi" type="number" min="0" placeholder="999">
+                <br>
+                <button id="btn-verificar-rank" type="button">Verificar Rank</button>
+            </form>
+        </section>
+
+        <p id="mostraRank"></p>
+
+    </main>
+
+    <footer></footer>
 </body>
+
 </html>
